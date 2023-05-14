@@ -35,7 +35,7 @@ namespace ProjectStore
         public void CalculateSubtotal()
         {
             /*This method is responsible for calculating the subtotal of the sale.
-             * This for is in charge of traversing our list of items. */
+             * This "for" is in charge of traversing our list of items. */
 
             for (int n = 0; n < items.Count; n++)
             {
