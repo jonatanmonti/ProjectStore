@@ -8,7 +8,7 @@ namespace ProjectStore
     public class ItemSale
     {
 
-        //this class is the one that allows to use several products of the same type at the same time
+        //This class is the one that allows to use several products of the same type at the same time.
 
         #region Properties
 
@@ -31,7 +31,7 @@ namespace ProjectStore
         public string Desc
         {
 
-            //this property is responsible for concatenating the name plus the price in the items listbox
+            //This property is responsible for concatenating the name plus the price in the items listbox.
 
             get
             {
@@ -48,7 +48,7 @@ namespace ProjectStore
         public float CalculateAmount()
         {
 
-            //this method is responsible for calculating the quantity of products for the price of the product
+            //This method is responsible for calculating the quantity of products for the price of the product.
 
             return amount * item.Price;
 
