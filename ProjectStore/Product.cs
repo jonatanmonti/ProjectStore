@@ -34,9 +34,9 @@ namespace ProjectStore
 			set { description = value; }
 		}
 
-		private double price;
+		private float price;
 
-		public double Price
+		public float Price
 		{
 			get { return price; }
 			set { price = value; }

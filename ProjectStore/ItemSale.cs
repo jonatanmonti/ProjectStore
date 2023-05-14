@@ -8,6 +8,8 @@ namespace ProjectStore
     public class ItemSale
     {
 
+        //this class is the one that allows to use several products of the same type at the same time
+
         #region Properties
 
         private int amount;
@@ -18,12 +20,38 @@ namespace ProjectStore
             set { amount = value; }
         }
 
-        private List<Product> products = new List<Product>();
+        private Product item;
 
-        public List<Product> Products
+        public Product Item
         {
-            get { return products; }
-            set { products = value; }
+            get { return item; }
+            set { item = value; }
+        }
+
+        public string Desc
+        {
+
+            //this property is responsible for concatenating the name plus the price in the items listbox
+
+            get
+            {
+                return item.Name + "$" + (amount * item.Price).ToString();
+            }
+
+        }
+
+
+        #endregion
+
+        #region Methods
+
+        public float CalculateAmount()
+        {
+
+            //this method is responsible for calculating the quantity of products for the price of the product
+
+            return amount * item.Price;
+
         }
 
         #endregion
